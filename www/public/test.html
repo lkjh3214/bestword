@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/lib/jquery-3.1.1.js">
+		</script>
+	</head>
+	<body>
+		<form action="" method="post">
+			<input type="text" name=""  value="" id="search-input1"/>
+			
+		</form>
+		<script type="text/javascript">
+//function search(){
+		$("#search-input1").keyup(function(ev){
+			console.log(123)
+			var e=ev||event;
+			var kw=$(this).val();
+			var d=null;	
+			 $.ajax({
+                    type:"get",
+                    url:'http://10.0.161.42:3333?kw='+kw,
+                    success:function(data){
+                    	console.log(data);
+                    }
+                });
+			
+		})
+		
+		
+		
+//	}
+	
+
+//		search();
+		</script>
+	</body>
+</html>
