@@ -1,0 +1,15 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "第一个express应用程序",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  
+  "author": "fei.fei",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
